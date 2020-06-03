@@ -1,4 +1,67 @@
 <!DOCTYPE html>
-<html>
- 晚上打游戏啊！！
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box {
+            width: 600px;
+            height: 600px;
+            /*border: 1px solid #000;*/
+            background: url("img/bg.png") no-repeat;
+            background-size: cover;
+            margin: 30px auto;
+            position: relative;
+            overflow: hidden;
+ 
+        }
+        #h{
+            width:100%;
+            height:100%;
+            background: url("img/h.png") no-repeat;
+            background-size: cover;
+            position: absolute;
+        }
+        #m{
+            width:100%;
+            height:100%;
+            background: url("img/m.png") no-repeat;
+            background-size: cover;
+            position: absolute;
+        }
+        #s{
+            width:100%;
+            height:100%;
+            background: url("img/s.png") no-repeat;
+            background-size: cover;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="h"></div>
+        <div id="m"></div>
+        <div id="s"></div>
+    </div>
+ 
+    <script>
+        window.onload = function(){
+            // 1:找到三个元素标签
+            var h = document.getElementById("h");   //时
+            var m = document.getElementById("m");   //分
+            var s = document.getElementById("s");   //秒
+ 
+            setInterval(function(){
+                var date = new Date();
+                var HH = (date.getHours()%12);
+                var MM = date.getMinutes();
+                var SS = date.getSeconds();
+                h.style.transform = "rotate("+(HH*30)+"deg)";
+                m.style.transform = "rotate("+(MM*6)+"deg)";
+                s.style.transform = "rotate("+(SS*6)+"deg)";
+            },1000)
+        }
+    </script>
+</body>
 </html>
