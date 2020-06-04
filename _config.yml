@@ -1,12 +1,12 @@
 # Basic
-title: 许天宇
+title: 中浪
 subtitle: 介于前浪和后浪之间
 description: 既然求了雨，就要承受泥泞~
 # 头像里面的标题
-avatarTitle: Finall-yu
+avatarTitle: 许天宇
 # 头像里面的描述
-avatarDesc: iOS / 机器学习
-url: "http://baixin.io"
+avatarDesc: 记录生活
+url: ""
 
 # Comment
 comment:
@@ -16,13 +16,8 @@ comment:
 
 # Social
 social:
-    weibo: 5366874726 
-    github: leopardpan
-    # zhihu: panpanleopard
-    # juejin: xxx
-    jianshu: 2ada30d8d0f7
-    # twitter: 
-    mail: leopardpan@icloud.com
+    weibo: 5241735574
+    mail: du_xutianyu@163.com
 
 
 # 百度统计 
